@@ -1,7 +1,46 @@
-*{
+* {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
+}
+
+.app-container {
+    background-color: #f5a040;
+}
+
+.header-container {
+    height: 30vh;
+}
+
+.map-locations {
+    display: flex;
+}
+
+.map-functions {
+    display: flex;
+}
+
+.app-display-container {
+    display: grid;
+    grid-template-areas:
+        'weather  map map'
+        'location map map';
+    gap: 10px;
+}
+
+.weather-display {
+    grid-area: weather;
+    background-color: #97e7cc;
+}
+
+.map-display {
+    grid-area: map;
+}
+
+.locations-display {
+    grid-area: location;
+    background-color: #8181d4;
+
 }
